@@ -1,0 +1,35 @@
+.intern {
+    background-color: #A8E6CF;
+}
+.engineer {
+    background-color: #DCEDC1;
+}
+
+.manager {
+    background-color: #FFD3B6;
+}
+.employee-card {
+    box-shadow: 5px 7px 15px 0px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+.team-heading {
+    background-color: #DB93B0;
+    color: white;
+    border-radius: 0rem;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
+}
+.btn-manager {
+    background-color: #FFD3B6;
+    min-width: 90px;
+}
+.btn-engineer {
+    background-color: #DCEDC1;
+    min-width: 90px;
+}
+.btn-intern {
+    background-color: #A8E6CF;
+    min-width: 90px;
+}
+.btn-all {
+    min-width: 90px;
+}
