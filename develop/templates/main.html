@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Team</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
+    <!-- font Awesome -->
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <!-- jQuery CDN minified -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
 </head>
 
 <body>
@@ -17,12 +26,21 @@
         <div class="row">
             <div class="col-12 jumbotron mb-3 team-heading">
                 <h1 class="text-center">My Team</h1>
+                <div class="text-center pt-3">
+                    <button class="btn btn-manager mx-2">Manager</button>
+                    <button class="btn btn-engineer mx-2">Engineer</button>
+                    <button class="btn btn-intern mx-2">Intern</button>
+                </div>
+                <div class="text-center pt-3">
+                    <button class="btn btn-light btn-all">Show All</button>
+                </div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+            <div class="team-area col-12 d-flex flex-wrap justify-content-center">
+                <!-- Dynamic content starts here -->
                 {{ team }}
             </div>
         </div>
